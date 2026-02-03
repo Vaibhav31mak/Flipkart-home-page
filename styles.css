@@ -263,6 +263,23 @@ nav {
     flex-wrap: wrap;
 }
 
+.next-banner {
+    background-color: white;
+    padding: 0vw 0vw;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 5vw;
+    z-index: 99;
+    margin-top: 1.8vh;
+    margin-left: 5.5vw;
+    margin-right: 20.5vw;
+    height: 41vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 87.65vw;
+}
+
 .item-bar{
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
@@ -286,12 +303,23 @@ nav {
 }
 
 .view-all-btn{
-    margin-left: 50.5vw;
+    margin-left: 49vw;
     padding: 1vh 1vw;
     color: white;
     background-color: #3f72e9;
     margin-bottom: 0.3vh;
     margin-top: -0.3vh;
+    border-radius: 0.2vw;
+    border-color: #3f72e9;
+}
+
+.next-view-all-btn{
+    margin-left: 64vw;
+    padding: 1vh 1vw;
+    color: white;
+    background-color: #3f72e9;
+    margin-bottom: 0.3vh;
+    margin-top: 0.3vh;
     border-radius: 0.2vw;
     border-color: #3f72e9;
 }
@@ -340,4 +368,9 @@ nav {
 .ad img{
     height: 100%;
     width: 100%;    
+}
+#shop {
+    font-size: 0.7vw;
+    color: grey;
+    margin-top: -0.5vh;
 }
