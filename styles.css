@@ -257,7 +257,10 @@ nav {
     margin-top: 1.8vh;
     margin-left: 5.5vw;
     margin-right: 20.5vw;
-    height: 38vh;
+    height: 38.5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .item-bar{
@@ -299,6 +302,7 @@ nav {
     padding: 1.5vw 2vw;
     overflow-x: auto;
     margin-top: -1.4vh;
+    overflow: hidden;
 }
 
 .item-card{
@@ -328,4 +332,12 @@ nav {
     font-size: 0.7vw;
     color: grey;
     text-align: center;
+}
+.ad{
+    height: 38.8vh;
+    width: 30vh;
+}
+.ad img{
+    height: 100%;
+    width: 100%;    
 }
