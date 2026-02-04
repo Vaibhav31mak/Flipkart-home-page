@@ -331,11 +331,12 @@ nav {
     overflow-x: auto;
     margin-top: -1.4vh;
     overflow: hidden;
+    /* justify-content: start; */
 }
 
 .item-card{
     align-self: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex: 1;
 }
 .item-card img{
