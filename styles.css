@@ -7,7 +7,6 @@ body {
     padding: 0;
     font-family: 'Roboto', 'Arial', sans-serif;
     background-color: #f9f9f9;
-    overflow: hidden;
 }
 
 nav {
@@ -16,7 +15,7 @@ nav {
     margin: 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .navbar-container {
@@ -26,6 +25,7 @@ nav {
     gap: 3%;
     max-width: 1400px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .logo a {
@@ -402,8 +402,8 @@ nav {
 }
 .item-card img{
     height: 17vh;
-    flex: 1;
     width: 8.5vw;
+    object-fit: contain;
 }
 .item-desc{
     align-self: center;
@@ -412,6 +412,7 @@ nav {
 .item-desc-name{
     font-size: 0.75vw;
     text-align: center;
+
 }
 .item-desc-price{
     font-size: 0.75vw;
@@ -465,3 +466,4 @@ nav {
     color: black;
     font-weight: bold;
 }
+
