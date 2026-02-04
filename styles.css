@@ -28,6 +28,25 @@ nav {
     flex-wrap: wrap;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 2.4vw;
+    height: 2.4vw;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    color: white;
+}
+
+.hamburger i {
+    font-size: 1.6vw;
+}
+
 .logo a {
     color: white;
     text-decoration: none;
@@ -196,6 +215,88 @@ nav {
 
 .cart-btn:hover {
     color: white;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1vh 4vw;
+    }
+
+    .navbar-container {
+        max-width: 100%;
+        gap: 2vw;
+    }
+
+    .logo {
+        flex: 1 1 auto;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        width: 10vw;
+        height: 10vw;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .hamburger i {
+        font-size: 6vw;
+    }
+
+    .search-box,
+    .nav-items {
+        width: 100%;
+        order: 3;
+        display: none;
+    }
+
+    .search-box {
+        height: auto;
+        padding: 1vh 2vw;
+    }
+
+    .search-box input {
+        font-size: 3.5vw;
+    }
+
+    .search-box button i {
+        font-size: 4vw;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vh;
+        padding: 1vh 0;
+    }
+
+    .login-btn,
+    .more-btn,
+    .cart-btn {
+        font-size: 3.5vw;
+        padding: 1vh 2vw;
+        margin-left: 0;
+    }
+
+    .more-dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        min-width: 100%;
+    }
+
+    .more-dropdown-menu a {
+        padding: 0.8vh 0;
+        font-size: 3.2vw;
+    }
+
+    .nav-toggle:checked ~ .search-box,
+    .nav-toggle:checked ~ .nav-items {
+        display: flex;
+    }
 }
 
 .category-bar {
