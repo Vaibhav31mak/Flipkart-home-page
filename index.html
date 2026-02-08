@@ -125,9 +125,6 @@
                         <button class="view-all-btn">VIEW ALL</button>
                     </div>
                     <div class="carousel-wrapper">
-                        <button class="carousel-btn prev" data-target="#deals-container">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
                         <div class="item-container" id="deals-container">
                             <div class="item-card">
                                 <img src="images/OIP.webp">
@@ -204,9 +201,6 @@
             </div>
 
             <div class="carousel-wrapper">
-                <button class="carousel-btn prev" data-target="#books-container">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
                 <div class="item-container" id="books-container">
                     <div class="item-card">
                         <img src="images/OIP (4).webp">
@@ -273,23 +267,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn next" data-target="#books-container">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
             </div>
         </section>
     </body>
-</html>        <!-- <script>
-            document.querySelectorAll('.carousel-btn').forEach((btn) => {
-                btn.addEventListener('click', () => {
-                    const targetSelector = btn.getAttribute('data-target');
-                    const container = document.querySelector(targetSelector);
-                    if (!container) return;
-                    const scrollAmount = Math.max(container.clientWidth * 0.8, 200);
-                    container.scrollBy({
-                        left: btn.classList.contains('next') ? scrollAmount : -scrollAmount,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        </script> -->
+</html>      
