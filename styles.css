@@ -11,7 +11,7 @@ body {
 
 nav {
     background-color: #3f72e9;
-    padding: 0.74vh 1.04vw;
+    padding: 0.5vh 1.04vw;
     margin: 0;
     position: sticky;
     top: 0;
@@ -71,9 +71,9 @@ nav {
     display: flex;
     background-color: white;
     border-radius: 0.21vw;
-    padding: 0.74vh 0.63vw;
+    padding: 0.5vh 0.63vw;
     min-width: 15.63vw;
-    height: 2.8vw;
+    height: 2.4vw;
 }
 
 .search-box input {
@@ -130,7 +130,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5vw;
-    padding: 0.8vh 1vw;
+    padding: 0.6vh 1vw;
     border-radius: 0.1vw;
     cursor: pointer;
     margin-left: 2vw;
@@ -165,7 +165,6 @@ nav {
     transition: color 0.3s ease;
     font-family: 'Roboto', 'Arial', sans-serif;
 }
-
 
 .more-btn i {
     font-size: 0.6vw;
@@ -220,327 +219,8 @@ nav {
     padding: 0.6vw 0.8vw;
 }
 
-@media (max-width: 1024px) {
-    .navbar-container {
-        max-width: 92vw;
-        gap: 2vw;
-    }
-
-    .logo img {
-        width: 12vw;
-    }
-
-    .search-box {
-        min-width: 22vw;
-        height: 3.4vw;
-    }
-
-    .search-box input {
-        font-size: 1.1vw;
-    }
-
-    .login-btn,
-    .more-btn,
-    .cart-btn {
-        font-size: 1.1vw;
-    }
-}
-
 .cart-btn:hover {
     color: white;
-}
-
-@media (max-width: 768px) {
-    nav {
-        padding: 1vh 4vw;
-        width: 100%;
-    }
-
-    .navbar-container {
-        max-width: 100%;
-        gap: 2vw;
-        width: 100%;
-    }
-
-    .logo {
-        flex: 1 1 auto;
-    }
-
-    .hamburger {
-        display: inline-flex;
-        width: 10vw;
-        height: 10vw;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        margin-left: auto;
-    }
-
-    .hamburger i {
-        font-size: 6vw;
-    }
-
-    .logo img {
-        width: 24vw;
-    }
-
-    .search-box,
-    .nav-items {
-        width: 100%;
-        order: 3;
-        display: none;
-    }
-
-    .search-box {
-        height: auto;
-        padding: 1vh 2vw;
-        margin-top: 1vh;
-        border-radius: 0.6vw;
-        background-color: white;
-        overflow: hidden;
-    }
-
-    .search-box input {
-        font-size: 3.5vw;
-        min-width: 0;
-    }
-
-    .search-box button i {
-        font-size: 4vw;
-    }
-
-    .nav-items {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2vh;
-        padding: 1.5vh 2vw;
-        background-color: #3f72e9;
-        border-radius: 0.8vw;
-        border: 0.15vw solid rgba(255, 255, 255, 0.3);
-        margin-top: 1vh;
-    }
-
-    .nav-items > a,
-    .more-dropdown-wrapper {
-        width: 100%;
-    }
-
-    .login-btn,
-    .more-btn,
-    .cart-btn {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .login-btn,
-    .more-btn,
-    .cart-btn {
-        font-size: 3.5vw;
-        padding: 1vh 2vw;
-        margin-left: 0;
-    }
-
-    .more-btn {
-        border: 0.15vw solid rgba(255, 255, 255, 0.3);
-        border-radius: 0.6vw;
-    }
-
-    .more-btn i {
-        font-size: 3.4vw;
-        margin-left: 2vw;
-    }
-
-    .more-btn,
-    .cart-btn {
-        color: white;
-    }
-
-    .login-btn {
-        border: 0.15vw solid rgba(255, 255, 255, 0.4);
-    }
-
-    .cart-btn i {
-        font-size: 4.2vw !important;
-        line-height: 1;
-        margin-right: 1.8vw;
-        display: inline-block;
-    }
-
-    .more-dropdown-menu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        border: 0.15vw solid rgba(255, 255, 255, 0.3);
-        padding: 0.6vh 2vw;
-        min-width: 100%;
-        margin-top: 0.6vh;
-        border-radius: 0.6vw;
-        background-color: rgba(255, 255, 255, 0.12);
-        display: none;
-    }
-
-    .more-dropdown-wrapper:focus-within .more-dropdown-menu,
-    .more-dropdown-wrapper:active .more-dropdown-menu {
-        display: block;
-    }
-
-    .more-dropdown-menu a {
-        padding: 0.8vh 0;
-        font-size: 3.2vw;
-        color: white;
-    }
-
-    .nav-toggle:checked ~ .search-box,
-    .nav-toggle:checked ~ .nav-items {
-        display: flex;
-    }
-
-    .nav-toggle:checked ~ .nav-items {
-        padding: 1.5vh 2vw;
-    }
-}
-
-/* Sections (category + banners) responsive */
-@media (max-width: 1024px) {
-    .category-bar {
-        padding: 1.2vw 2vw;
-        height: auto;
-    }
-
-    .category-container {
-        max-width: 92vw;
-        height: auto;
-        flex-wrap: wrap;
-        gap: 1vw;
-        justify-content: flex-start;
-    }
-
-    .category-item {
-        width: 12vw;
-        margin-top: 0;
-    }
-
-    .banner,
-    .next-banner {
-        margin-left: 2vw;
-        margin-right: 2vw;
-        width: 96vw;
-        height: auto;
-    }
-
-    .item-container {
-        gap: 1.2vw;
-        padding: 1.5vw 2vw;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
-
-    .item-card {
-        min-width: 16vw;
-        flex: 0 0 auto;
-    }
-
-    .item-card img {
-        width: 10vw;
-        height: 16vh;
-    }
-
-    .ad {
-        width: 24vw;
-        height: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .category-bar {
-        padding: 2vw 3vw;
-        height: auto;
-        position: static;
-    }
-
-    .category-container {
-        max-width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-        gap: 2vw 3vw;
-        justify-content: space-between;
-    }
-
-    .category-item {
-        width: 20vw;
-        margin-top: 0;
-    }
-
-    .category-item span {
-        font-size: 2.6vw;
-    }
-
-    .category-item i {
-        font-size: 3.6vw;
-    }
-
-    .banner,
-    .next-banner {
-        margin: 2vw 2vw 0;
-        width: 96vw;
-        height: auto;
-        position: static;
-    }
-
-    .item-bar {
-        padding: 1.6vh 3vw;
-        position: static;
-    }
-
-    .item-bar b {
-        font-size: 3.4vw !important;
-    }
-
-    .item-bar span,
-    #shop {
-        font-size: 2.8vw;
-    }
-
-    .view-all-btn,
-    .next-view-all-btn {
-        margin-left: auto;
-        margin-right: 2vw;
-        padding: 0.8vh 2.5vw;
-        font-size: 2.6vw;
-    }
-
-    .item-container {
-        gap: 2.5vw;
-        padding: 2.5vw 3vw 3vw;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
-
-    .item-card {
-        min-width: 34vw;
-        flex: 0 0 auto;
-    }
-
-    .item-card img {
-        width: 22vw;
-        height: 14vh;
-    }
-
-    .item-desc-name,
-    .item-desc-price,
-    .item-desc-info {
-        font-size: 2.6vw;
-    }
-
-    .carousel-btn {
-        display: none;
-    }
-
-    .ad {
-        width: 100%;
-        height: auto;
-        margin: 2vw 0 0;
-    }
 }
 
 .category-bar {
